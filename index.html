@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Demo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use Inter as the default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom colors to match the image */
+        .custom-bg-blue {
+            background-color: #cbe0ec;
+        }
+        .custom-btn-blue {
+            background-color: #466d83;
+        }
+        .custom-btn-blue:hover {
+            background-color: #5a89a3;
+        }
+        .form-input {
+            border: 1px solid #d1d5db; /* gray-300 */
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #466d83;
+            box-shadow: 0 0 0 2px rgba(70, 109, 131, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <main class="flex flex-col lg:flex-row min-h-screen">
+        <!-- Left Column: Form Section -->
+        <div class="w-full lg:w-1/2 bg-white flex items-center justify-center p-8 sm:p-12 lg:p-16">
+            <div class="max-w-md w-full">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Get a demo</h1>
+                <p class="text-gray-600 mb-8">
+                    Connect with us to see how we can help you achieve your goals. Fill out the form, and we'll be in touch shortly.
+                </p>
+                
+                <!-- Form -->
+                <form action="#" method="POST" class="space-y-5">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Name" class="w-full p-4 rounded-md form-input transition duration-300">
+                    </div>
+                    <div>
+                        <input type="text" name="company" id="company" placeholder="Company" class="w-full p-4 rounded-md form-input transition duration-300">
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email" class="w-full p-4 rounded-md form-input transition duration-300">
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone" class="w-full p-4 rounded-md form-input transition duration-300">
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full custom-btn-blue text-white py-4 px-6 rounded-md font-semibold tracking-wider uppercase transition duration-300 ease-in-out transform hover:scale-105">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Column: Testimonial Section -->
+        <div class="w-full lg:w-1/2 custom-bg-blue flex items-center justify-center p-8 sm:p-12 lg:p-16">
+            <div class="max-w-md w-full text-gray-800">
+                <p class="mb-12 text-lg leading-relaxed">
+                    "The future belongs to those who believe in the beauty of their dreams." This simple yet powerful idea reminds us that our aspirations are the seeds of our future reality.
+                </p>
+
+                <!-- Testimonial Card -->
+                <div class="flex items-center mb-12">
+                    <img src="https://placehold.co/80x80/F2994A/FFFFFF?text=A&font=inter" alt="Profile picture of ARUN" class="w-20 h-20 rounded-full mr-6 shadow-lg">
+                    <div>
+                        <h3 class="text-2xl font-bold">ARUN</h3>
+                        <p class="text-gray-700 text-lg">Student</p>
+                    </div>
+                </div>
+
+                <p class="mb-6 leading-relaxed">
+                    "Success is not final, failure is not fatal: it is the courage to continue that counts."
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
